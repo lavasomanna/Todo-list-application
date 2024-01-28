@@ -1,0 +1,89 @@
+
+html {
+    background-image: linear-gradient(to right bottom, purple, green);
+    height:100vh;
+    background-repeat: no-repeat;
+}
+body{
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    padding: 0;
+}
+.todo-container{
+width: 500px;
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+margin: 5em auto 0;
+}
+h1{
+    text-align: center;
+}
+.input-container{
+    display: flex;
+    margin-top: 30px;
+}
+input[type="text"]{
+    flex: 1;
+    padding: 8px;
+}
+input{
+    font-size: 20px;
+}
+button{
+    background-color:red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: larger;
+    border-radius: 3px;
+    font-family: 'Caveat', cursive;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin: 10px 0;
+    display: flex;
+    justify-content:space-between;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn{
+    padding: 10px;
+    font-size: 17px;
+}
+.completed{
+    color: grey;
+    text-decoration: line-through;
+}
+
+.todo-container #tasklist li span{font-size: 28px;}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+    font-family: 'Caveat', cursive;
+}
+
+::placeholder {
+    font-family: 'Caveat', cursive;
+}
+
+input[type="text"]{
+    font-family: 'Caveat', cursive;
+    font-size:28px;
+}
+
+
+/***********media query css**************/
+
+@media only screen and (max-width: 767px) {
+    html{width:100%;}
+    .todo-container{width:auto;margin: 2em 5%;}
+    input[type="text"]{border:1px solid;width:200px;}
+    .input-container{flex-wrap:wrap;}
+
+}
